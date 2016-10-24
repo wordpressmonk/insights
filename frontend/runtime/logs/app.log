@@ -1,0 +1,2382 @@
+2016-10-20 13:03:41 [::1][1][eb1ge5u633bgrkoooo8lm7b7j1][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: user' in E:\xampp\htdocs\BookInsights\frontend\views\layouts\main.php:53
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\frontend\views\layouts\main.php(53): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 53, Array)
+#1 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(325): require('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\xampp\\htdocs...', Array)
+#3 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('E:\\xampp\\htdocs...', Array, Object(frontend\controllers\ProfileController))
+#4 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="con...')
+#5 E:\xampp\htdocs\BookInsights\frontend\controllers\ProfileController.php(40): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\ProfileController->actionAccount()
+#7 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('account', Array)
+#10 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('profile/account', Array)
+#11 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-10-20 13:03:41 [::1][1][eb1ge5u633bgrkoooo8lm7b7j1][info][application] $_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"zwJiY-whyIhLXoYXj4M0ySD09go0q641\";}'
+    'advanced-frontend' => 'eb1ge5u633bgrkoooo8lm7b7j1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/BookInsights/frontend/web/feed/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22zwJiY-whyIhLXoYXj4M0ySD09go0q641%22%3B%7D; advanced-frontend=eb1ge5u633bgrkoooo8lm7b7j1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '51688'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/profile/account'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/BookInsights/frontend/web/profile/account'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476948821.322
+    'REQUEST_TIME' => 1476948821
+]
+2016-10-20 13:04:00 [::1][1][eb1ge5u633bgrkoooo8lm7b7j1][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: username' in E:\xampp\htdocs\BookInsights\frontend\views\layouts\main.php:53
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\frontend\views\layouts\main.php(53): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 53, Array)
+#1 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(325): require('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\xampp\\htdocs...', Array)
+#3 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('E:\\xampp\\htdocs...', Array, Object(frontend\controllers\ProfileController))
+#4 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="con...')
+#5 E:\xampp\htdocs\BookInsights\frontend\controllers\ProfileController.php(40): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\ProfileController->actionAccount()
+#7 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('account', Array)
+#10 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('profile/account', Array)
+#11 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-10-20 13:04:00 [::1][1][eb1ge5u633bgrkoooo8lm7b7j1][info][application] $_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"zwJiY-whyIhLXoYXj4M0ySD09go0q641\";}'
+    'advanced-frontend' => 'eb1ge5u633bgrkoooo8lm7b7j1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/BookInsights/frontend/web/feed/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22zwJiY-whyIhLXoYXj4M0ySD09go0q641%22%3B%7D; advanced-frontend=eb1ge5u633bgrkoooo8lm7b7j1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '51691'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/profile/account'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/BookInsights/frontend/web/profile/account'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476948840.07
+    'REQUEST_TIME' => 1476948840
+]
+2016-10-20 13:04:14 [::1][1][eb1ge5u633bgrkoooo8lm7b7j1][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\helpers\BaseHtml.php:537
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\helpers\BaseHtml.php(537): yii\base\ErrorHandler->handleError(8, 'Array to string...', 'E:\\xampp\\htdocs...', 537, Array)
+#1 E:\xampp\htdocs\BookInsights\frontend\views\layouts\main.php(53): yii\helpers\BaseHtml::input('text', 'username', Array)
+#2 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(325): require('E:\\xampp\\htdocs...')
+#3 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\xampp\\htdocs...', Array)
+#4 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('E:\\xampp\\htdocs...', Array, Object(frontend\controllers\ProfileController))
+#5 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="con...')
+#6 E:\xampp\htdocs\BookInsights\frontend\controllers\ProfileController.php(40): yii\base\Controller->render('view', Array)
+#7 [internal function]: frontend\controllers\ProfileController->actionAccount()
+#8 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('account', Array)
+#11 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('profile/account', Array)
+#12 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2016-10-20 13:04:14 [::1][1][eb1ge5u633bgrkoooo8lm7b7j1][info][application] $_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"zwJiY-whyIhLXoYXj4M0ySD09go0q641\";}'
+    'advanced-frontend' => 'eb1ge5u633bgrkoooo8lm7b7j1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/BookInsights/frontend/web/feed/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22zwJiY-whyIhLXoYXj4M0ySD09go0q641%22%3B%7D; advanced-frontend=eb1ge5u633bgrkoooo8lm7b7j1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '51694'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/profile/account'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/BookInsights/frontend/web/profile/account'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476948854.052
+    'REQUEST_TIME' => 1476948854
+]
+2016-10-20 13:06:48 [::1][1][eb1ge5u633bgrkoooo8lm7b7j1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: feed/search' in E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('search', Array)
+#1 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('feed/search', Array)
+#2 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-10-20 13:06:48 [::1][1][eb1ge5u633bgrkoooo8lm7b7j1][info][application] $_POST = [
+    '_csrf-frontend' => 'ZVlQUnZxWk8fLho7L1wtJxwQOB4uHgMXD20dYg8iHn9cPj9iB0dufg=='
+    'username' => ''
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"zwJiY-whyIhLXoYXj4M0ySD09go0q641\";}'
+    'advanced-frontend' => 'eb1ge5u633bgrkoooo8lm7b7j1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '85'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/BookInsights/frontend/web/insight/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22zwJiY-whyIhLXoYXj4M0ySD09go0q641%22%3B%7D; advanced-frontend=eb1ge5u633bgrkoooo8lm7b7j1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '51736'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/feed/search'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/BookInsights/frontend/web/feed/search'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476949008.753
+    'REQUEST_TIME' => 1476949008
+]
+2016-10-20 17:37:59 [::1][1][eb1ge5u633bgrkoooo8lm7b7j1][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: common\models\Comments::text' in E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\db\BaseActiveRecord.php(272): yii\base\Component->__set('text', 'xzcvfv')
+#1 E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php(183): yii\db\BaseActiveRecord->__set('text', 'xzcvfv')
+#2 [internal function]: frontend\controllers\InsightController->actionAddComment('1', NULL)
+#3 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('add-comment', Array)
+#6 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('insight/add-com...', Array)
+#7 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2016-10-20 17:37:59 [::1][1][eb1ge5u633bgrkoooo8lm7b7j1][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    'comment' => 'xzcvfv'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"zwJiY-whyIhLXoYXj4M0ySD09go0q641\";}'
+    'advanced-frontend' => 'eb1ge5u633bgrkoooo8lm7b7j1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'UzJueHA0TGQpRSQRKRk7DCp7BjQoWxU8OQYjSAlnCFRqVQFIAQJ4VQ=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/BookInsights/frontend/web/insight/view?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22zwJiY-whyIhLXoYXj4M0ySD09go0q641%22%3B%7D; advanced-frontend=eb1ge5u633bgrkoooo8lm7b7j1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '53748'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/add-comment?id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/add-comment?id=1'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476965279.392
+    'REQUEST_TIME' => 1476965279
+]
+2016-10-20 17:39:08 [::1][1][eb1ge5u633bgrkoooo8lm7b7j1][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\Insights' not found' in E:\xampp\htdocs\BookInsights\common\models\Comments.php:43
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-10-20 17:39:07 [::1][1][eb1ge5u633bgrkoooo8lm7b7j1][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    'comment' => 'Here we go!!'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"zwJiY-whyIhLXoYXj4M0ySD09go0q641\";}'
+    'advanced-frontend' => 'eb1ge5u633bgrkoooo8lm7b7j1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '20'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'UzJueHA0TGQpRSQRKRk7DCp7BjQoWxU8OQYjSAlnCFRqVQFIAQJ4VQ=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/BookInsights/frontend/web/insight/view?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22zwJiY-whyIhLXoYXj4M0ySD09go0q641%22%3B%7D; advanced-frontend=eb1ge5u633bgrkoooo8lm7b7j1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '53767'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/add-comment?id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/add-comment?id=1'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476965347.96
+    'REQUEST_TIME' => 1476965347
+]
+2016-10-20 17:45:21 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function asArray() on a non-object' in E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php:76
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-10-20 17:45:21 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"zwJiY-whyIhLXoYXj4M0ySD09go0q641\";}'
+    'advanced-frontend' => 'eb1ge5u633bgrkoooo8lm7b7j1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22zwJiY-whyIhLXoYXj4M0ySD09go0q641%22%3B%7D; advanced-frontend=eb1ge5u633bgrkoooo8lm7b7j1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '53810'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=1'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476965721.298
+    'REQUEST_TIME' => 1476965721
+]
+2016-10-20 17:50:08 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: text' in E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php:69
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php(69): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 69, Array)
+#1 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(325): require('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\xampp\\htdocs...', Array)
+#3 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\xampp\\htdocs...', Array, Object(frontend\controllers\InsightController))
+#4 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('view', Array, Object(frontend\controllers\InsightController))
+#5 E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php(84): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\InsightController->actionView('1')
+#7 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#10 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('insight/view', Array)
+#11 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-10-20 17:50:08 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"zwJiY-whyIhLXoYXj4M0ySD09go0q641\";}'
+    'advanced-frontend' => 'eb1ge5u633bgrkoooo8lm7b7j1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22zwJiY-whyIhLXoYXj4M0ySD09go0q641%22%3B%7D; advanced-frontend=eb1ge5u633bgrkoooo8lm7b7j1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '53840'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=1'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476966008.702
+    'REQUEST_TIME' => 1476966008
+]
+2016-10-20 17:50:21 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Use of undefined constant text - assumed 'text'' in E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php:69
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php(69): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', 'E:\\xampp\\htdocs...', 69, Array)
+#1 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(325): require('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\xampp\\htdocs...', Array)
+#3 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\xampp\\htdocs...', Array, Object(frontend\controllers\InsightController))
+#4 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('view', Array, Object(frontend\controllers\InsightController))
+#5 E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php(84): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\InsightController->actionView('1')
+#7 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#10 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('insight/view', Array)
+#11 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-10-20 17:50:20 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"zwJiY-whyIhLXoYXj4M0ySD09go0q641\";}'
+    'advanced-frontend' => 'eb1ge5u633bgrkoooo8lm7b7j1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22zwJiY-whyIhLXoYXj4M0ySD09go0q641%22%3B%7D; advanced-frontend=eb1ge5u633bgrkoooo8lm7b7j1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '53842'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=1'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476966020.885
+    'REQUEST_TIME' => 1476966020
+]
+2016-10-20 17:50:32 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: text' in E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php:69
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php(69): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 69, Array)
+#1 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(325): require('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\xampp\\htdocs...', Array)
+#3 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\xampp\\htdocs...', Array, Object(frontend\controllers\InsightController))
+#4 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('view', Array, Object(frontend\controllers\InsightController))
+#5 E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php(84): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\InsightController->actionView('1')
+#7 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#10 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('insight/view', Array)
+#11 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-10-20 17:50:32 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"zwJiY-whyIhLXoYXj4M0ySD09go0q641\";}'
+    'advanced-frontend' => 'eb1ge5u633bgrkoooo8lm7b7j1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22zwJiY-whyIhLXoYXj4M0ySD09go0q641%22%3B%7D; advanced-frontend=eb1ge5u633bgrkoooo8lm7b7j1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '53844'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=1'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476966032.034
+    'REQUEST_TIME' => 1476966032
+]
+2016-10-20 17:51:07 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: text' in E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php:63
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php(63): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 63, Array)
+#1 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(325): require('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\xampp\\htdocs...', Array)
+#3 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\xampp\\htdocs...', Array, Object(frontend\controllers\InsightController))
+#4 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('view', Array, Object(frontend\controllers\InsightController))
+#5 E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php(84): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\InsightController->actionView('1')
+#7 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#10 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('insight/view', Array)
+#11 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-10-20 17:51:07 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"zwJiY-whyIhLXoYXj4M0ySD09go0q641\";}'
+    'advanced-frontend' => 'eb1ge5u633bgrkoooo8lm7b7j1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22zwJiY-whyIhLXoYXj4M0ySD09go0q641%22%3B%7D; advanced-frontend=eb1ge5u633bgrkoooo8lm7b7j1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '53846'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=1'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476966067.378
+    'REQUEST_TIME' => 1476966067
+]
+2016-10-20 17:51:59 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: text' in E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php:63
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php(63): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 63, Array)
+#1 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(325): require('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\xampp\\htdocs...', Array)
+#3 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\xampp\\htdocs...', Array, Object(frontend\controllers\InsightController))
+#4 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('view', Array, Object(frontend\controllers\InsightController))
+#5 E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php(84): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\InsightController->actionView('1')
+#7 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#10 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('insight/view', Array)
+#11 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-10-20 17:51:59 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"zwJiY-whyIhLXoYXj4M0ySD09go0q641\";}'
+    'advanced-frontend' => 'eb1ge5u633bgrkoooo8lm7b7j1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22zwJiY-whyIhLXoYXj4M0ySD09go0q641%22%3B%7D; advanced-frontend=eb1ge5u633bgrkoooo8lm7b7j1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '53857'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=1'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476966119.314
+    'REQUEST_TIME' => 1476966119
+]
+2016-10-20 17:53:02 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: c_id' in E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php:63
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php(63): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 63, Array)
+#1 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(325): require('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\xampp\\htdocs...', Array)
+#3 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\xampp\\htdocs...', Array, Object(frontend\controllers\InsightController))
+#4 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('view', Array, Object(frontend\controllers\InsightController))
+#5 E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php(84): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\InsightController->actionView('1')
+#7 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#10 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('insight/view', Array)
+#11 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-10-20 17:53:01 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"zwJiY-whyIhLXoYXj4M0ySD09go0q641\";}'
+    'advanced-frontend' => 'eb1ge5u633bgrkoooo8lm7b7j1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22zwJiY-whyIhLXoYXj4M0ySD09go0q641%22%3B%7D; advanced-frontend=eb1ge5u633bgrkoooo8lm7b7j1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '53869'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=1'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476966181.847
+    'REQUEST_TIME' => 1476966181
+]
+2016-10-20 17:53:09 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php:63
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php(63): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', 'E:\\xampp\\htdocs...', 63, Array)
+#1 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(325): require('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\xampp\\htdocs...', Array)
+#3 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\xampp\\htdocs...', Array, Object(frontend\controllers\InsightController))
+#4 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('view', Array, Object(frontend\controllers\InsightController))
+#5 E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php(84): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\InsightController->actionView('1')
+#7 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#10 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('insight/view', Array)
+#11 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-10-20 17:53:09 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"zwJiY-whyIhLXoYXj4M0ySD09go0q641\";}'
+    'advanced-frontend' => 'eb1ge5u633bgrkoooo8lm7b7j1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22zwJiY-whyIhLXoYXj4M0ySD09go0q641%22%3B%7D; advanced-frontend=eb1ge5u633bgrkoooo8lm7b7j1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '53871'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=1'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476966189.509
+    'REQUEST_TIME' => 1476966189
+]
+2016-10-20 17:55:34 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ']'' in E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php:78
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-10-20 17:55:33 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"zwJiY-whyIhLXoYXj4M0ySD09go0q641\";}'
+    'advanced-frontend' => 'eb1ge5u633bgrkoooo8lm7b7j1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22zwJiY-whyIhLXoYXj4M0ySD09go0q641%22%3B%7D; advanced-frontend=eb1ge5u633bgrkoooo8lm7b7j1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '53889'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=1'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476966333.957
+    'REQUEST_TIME' => 1476966333
+]
+2016-10-20 17:55:45 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: common\models\Comments::replies' in E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\db\BaseActiveRecord.php(272): yii\base\Component->__set('replies', Array)
+#1 E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php(79): yii\db\BaseActiveRecord->__set('replies', Array)
+#2 [internal function]: frontend\controllers\InsightController->actionView('1')
+#3 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#6 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('insight/view', Array)
+#7 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2016-10-20 17:55:45 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"zwJiY-whyIhLXoYXj4M0ySD09go0q641\";}'
+    'advanced-frontend' => 'eb1ge5u633bgrkoooo8lm7b7j1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22zwJiY-whyIhLXoYXj4M0ySD09go0q641%22%3B%7D; advanced-frontend=eb1ge5u633bgrkoooo8lm7b7j1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '53890'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=1'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476966345.355
+    'REQUEST_TIME' => 1476966345
+]
+2016-10-20 17:59:17 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '}', expecting ',' or ';'' in E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php:78
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-10-20 17:59:17 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"zwJiY-whyIhLXoYXj4M0ySD09go0q641\";}'
+    'advanced-frontend' => 'eb1ge5u633bgrkoooo8lm7b7j1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22zwJiY-whyIhLXoYXj4M0ySD09go0q641%22%3B%7D; advanced-frontend=eb1ge5u633bgrkoooo8lm7b7j1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '53940'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=1'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476966557.048
+    'REQUEST_TIME' => 1476966557
+]
+2016-10-20 18:10:53 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Use of undefined constant comment - assumed 'comment'' in E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php:101
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php(101): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', 'E:\\xampp\\htdocs...', 101, Array)
+#1 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(325): require('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\xampp\\htdocs...', Array)
+#3 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\xampp\\htdocs...', Array, Object(frontend\controllers\InsightController))
+#4 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('view', Array, Object(frontend\controllers\InsightController))
+#5 E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php(84): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\InsightController->actionView('1')
+#7 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#10 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('insight/view', Array)
+#11 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-10-20 18:10:52 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"zwJiY-whyIhLXoYXj4M0ySD09go0q641\";}'
+    'advanced-frontend' => 'eb1ge5u633bgrkoooo8lm7b7j1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4cb0c30967c87ac532d649927653228f6dd627198a13d8a23cebb60ac3ae0aafa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22zwJiY-whyIhLXoYXj4M0ySD09go0q641%22%3B%7D; advanced-frontend=eb1ge5u633bgrkoooo8lm7b7j1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '54105'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=1'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476967252.848
+    'REQUEST_TIME' => 1476967252
+]
+2016-10-21 10:04:34 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '0' in 'order clause'' in E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\db\Query.php(210): yii\db\Command->queryAll()
+#3 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php(78): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\InsightController->actionView('<span class="st...')
+#6 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#7 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '0' in 'order clause'
+The SQL being executed was: SELECT * FROM `comments` WHERE `parent_id`=1 ORDER BY `0`' in E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\db\Query.php(210): yii\db\Command->queryAll()
+#3 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php(78): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\InsightController->actionView('<span class="st...')
+#6 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#7 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column '0' in 'order clause'
+)
+
+2016-10-21 10:04:34 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '1e2965aab63a19ca38289f88300a21a431a46ca7d6d9d8923396fa5125cca527a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"S8Ms4Hhyu8QJndwyYJ9Lp0wbPHdjgt7O\";}'
+    'advanced-frontend' => 'kls3lpphp3ad8pjpb8fb630j85'
+    '_identity-frontend' => '19176f5c9392ca26f5d4177319f2d8cfd5c7fd1b5b8f8ab685c26b9f02784e16a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:51:\"[2,\"lsddfFTazscDh8kkWe3r3gluGDIOROrL\",\"3600*24*30\"]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/BookInsights/frontend/web/feed/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=1e2965aab63a19ca38289f88300a21a431a46ca7d6d9d8923396fa5125cca527a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22S8Ms4Hhyu8QJndwyYJ9Lp0wbPHdjgt7O%22%3B%7D; advanced-frontend=kls3lpphp3ad8pjpb8fb630j85; _identity-frontend=19176f5c9392ca26f5d4177319f2d8cfd5c7fd1b5b8f8ab685c26b9f02784e16a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A51%3A%22%5B2%2C%22lsddfFTazscDh8kkWe3r3gluGDIOROrL%22%2C%223600%2A24%2A30%22%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '49901'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=1'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477024474.308
+    'REQUEST_TIME' => 1477024474
+]
+2016-10-21 10:12:41 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php:72
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php(72): yii\base\ErrorHandler->handleError(8, 'Array to string...', 'E:\\xampp\\htdocs...', 72, Array)
+#1 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(325): require('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\xampp\\htdocs...', Array)
+#3 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\xampp\\htdocs...', Array, Object(frontend\controllers\InsightController))
+#4 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('view', Array, Object(frontend\controllers\InsightController))
+#5 E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php(84): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\InsightController->actionView('1')
+#7 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#10 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('insight/view', Array)
+#11 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-10-21 10:12:40 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '1e2965aab63a19ca38289f88300a21a431a46ca7d6d9d8923396fa5125cca527a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"S8Ms4Hhyu8QJndwyYJ9Lp0wbPHdjgt7O\";}'
+    'advanced-frontend' => 'kls3lpphp3ad8pjpb8fb630j85'
+    '_identity-frontend' => '19176f5c9392ca26f5d4177319f2d8cfd5c7fd1b5b8f8ab685c26b9f02784e16a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:51:\"[2,\"lsddfFTazscDh8kkWe3r3gluGDIOROrL\",\"3600*24*30\"]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/BookInsights/frontend/web/feed/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=1e2965aab63a19ca38289f88300a21a431a46ca7d6d9d8923396fa5125cca527a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22S8Ms4Hhyu8QJndwyYJ9Lp0wbPHdjgt7O%22%3B%7D; advanced-frontend=kls3lpphp3ad8pjpb8fb630j85; _identity-frontend=19176f5c9392ca26f5d4177319f2d8cfd5c7fd1b5b8f8ab685c26b9f02784e16a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A51%3A%22%5B2%2C%22lsddfFTazscDh8kkWe3r3gluGDIOROrL%22%2C%223600%2A24%2A30%22%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '49973'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=1'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477024960.859
+    'REQUEST_TIME' => 1477024960
+]
+2016-10-21 10:30:30 [::1][2][kls3lpphp3ad8pjpb8fb630j85][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#8 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/signup', Array)
+#9 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-10-21 10:30:30 [::1][2][kls3lpphp3ad8pjpb8fb630j85][info][application] $_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '1e2965aab63a19ca38289f88300a21a431a46ca7d6d9d8923396fa5125cca527a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"S8Ms4Hhyu8QJndwyYJ9Lp0wbPHdjgt7O\";}'
+    'advanced-frontend' => 'kls3lpphp3ad8pjpb8fb630j85'
+    '_identity-frontend' => '19176f5c9392ca26f5d4177319f2d8cfd5c7fd1b5b8f8ab685c26b9f02784e16a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:51:\"[2,\"lsddfFTazscDh8kkWe3r3gluGDIOROrL\",\"3600*24*30\"]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'token_key' => 'koMrkwAAAAAAxZnqAAABV-WBjGo'
+    'token_secret' => 'hYJXEBtYwiSRqOjhpK1fVZwDD25Ea0lK'
+    'status' => 'verified'
+    'request_vars' => [
+        'oauth_token' => '3433980017-yp32zIy4dEq3IU0OPNzE4gw8catjNKGoBjrNbPK'
+        'oauth_token_secret' => 't2splFBDxKNamsunmJQ0D4VNeby7FbSevuhjWeLf2RjXG'
+        'user_id' => '3433980017'
+        'screen_name' => 'gbdency'
+        'x_auth_expires' => '0'
+    ]
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/BookInsights/frontend/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=1e2965aab63a19ca38289f88300a21a431a46ca7d6d9d8923396fa5125cca527a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22S8Ms4Hhyu8QJndwyYJ9Lp0wbPHdjgt7O%22%3B%7D; advanced-frontend=kls3lpphp3ad8pjpb8fb630j85; _identity-frontend=19176f5c9392ca26f5d4177319f2d8cfd5c7fd1b5b8f8ab685c26b9f02784e16a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A51%3A%22%5B2%2C%22lsddfFTazscDh8kkWe3r3gluGDIOROrL%22%2C%223600%2A24%2A30%22%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '50101'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/BookInsights/frontend/web/site/signup'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477026030.409
+    'REQUEST_TIME' => 1477026030
+]
+2016-10-21 11:07:07 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: r_count' in E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php:68
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php(68): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 68, Array)
+#1 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(325): require('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\xampp\\htdocs...', Array)
+#3 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\xampp\\htdocs...', Array, Object(frontend\controllers\InsightController))
+#4 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('view', Array, Object(frontend\controllers\InsightController))
+#5 E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php(84): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\InsightController->actionView('2')
+#7 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#10 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('insight/view', Array)
+#11 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-10-21 11:07:07 [::1][-][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '1e2965aab63a19ca38289f88300a21a431a46ca7d6d9d8923396fa5125cca527a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"S8Ms4Hhyu8QJndwyYJ9Lp0wbPHdjgt7O\";}'
+    'advanced-frontend' => 'kls3lpphp3ad8pjpb8fb630j85'
+    '_identity-frontend' => '19176f5c9392ca26f5d4177319f2d8cfd5c7fd1b5b8f8ab685c26b9f02784e16a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:51:\"[2,\"lsddfFTazscDh8kkWe3r3gluGDIOROrL\",\"3600*24*30\"]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=1e2965aab63a19ca38289f88300a21a431a46ca7d6d9d8923396fa5125cca527a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22S8Ms4Hhyu8QJndwyYJ9Lp0wbPHdjgt7O%22%3B%7D; advanced-frontend=kls3lpphp3ad8pjpb8fb630j85; _identity-frontend=19176f5c9392ca26f5d4177319f2d8cfd5c7fd1b5b8f8ab685c26b9f02784e16a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A51%3A%22%5B2%2C%22lsddfFTazscDh8kkWe3r3gluGDIOROrL%22%2C%223600%2A24%2A30%22%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '50202'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=2'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477028227.268
+    'REQUEST_TIME' => 1477028227
+]
+2016-10-21 13:42:22 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$user_comments' (T_VARIABLE)' in E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php:80
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-10-21 13:42:22 [::1][-][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '1e2965aab63a19ca38289f88300a21a431a46ca7d6d9d8923396fa5125cca527a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"S8Ms4Hhyu8QJndwyYJ9Lp0wbPHdjgt7O\";}'
+    'advanced-frontend' => 'kls3lpphp3ad8pjpb8fb630j85'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=1e2965aab63a19ca38289f88300a21a431a46ca7d6d9d8923396fa5125cca527a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22S8Ms4Hhyu8QJndwyYJ9Lp0wbPHdjgt7O%22%3B%7D; advanced-frontend=kls3lpphp3ad8pjpb8fb630j85'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '51132'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=2'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477037542.593
+    'REQUEST_TIME' => 1477037542
+]
+2016-10-21 13:42:55 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$user_comments' (T_VARIABLE)' in E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php:80
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-10-21 13:42:54 [::1][-][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '1e2965aab63a19ca38289f88300a21a431a46ca7d6d9d8923396fa5125cca527a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"S8Ms4Hhyu8QJndwyYJ9Lp0wbPHdjgt7O\";}'
+    'advanced-frontend' => 'kls3lpphp3ad8pjpb8fb630j85'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=1e2965aab63a19ca38289f88300a21a431a46ca7d6d9d8923396fa5125cca527a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22S8Ms4Hhyu8QJndwyYJ9Lp0wbPHdjgt7O%22%3B%7D; advanced-frontend=kls3lpphp3ad8pjpb8fb630j85'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '51150'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=2'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477037574.961
+    'REQUEST_TIME' => 1477037574
+]
+2016-10-21 13:44:52 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: user_comments' in E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php:80
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php(80): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 80, Array)
+#1 [internal function]: frontend\controllers\InsightController->actionView('2')
+#2 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#5 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('insight/view', Array)
+#6 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-10-21 13:44:52 [::1][-][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '51220'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=2'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477037692.554
+    'REQUEST_TIME' => 1477037692
+]
+2016-10-21 14:33:05 [::1][2][kls3lpphp3ad8pjpb8fb630j85][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Cannot use object of type stdClass as array' in E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php:65
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-10-21 14:33:05 [::1][2][kls3lpphp3ad8pjpb8fb630j85][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '1e2965aab63a19ca38289f88300a21a431a46ca7d6d9d8923396fa5125cca527a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"S8Ms4Hhyu8QJndwyYJ9Lp0wbPHdjgt7O\";}'
+    'advanced-frontend' => 'kls3lpphp3ad8pjpb8fb630j85'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'token_key' => 'koMrkwAAAAAAxZnqAAABV-WBjGo'
+    'token_secret' => 'hYJXEBtYwiSRqOjhpK1fVZwDD25Ea0lK'
+    'status' => 'verified'
+    'request_vars' => [
+        'oauth_token' => '3433980017-yp32zIy4dEq3IU0OPNzE4gw8catjNKGoBjrNbPK'
+        'oauth_token_secret' => 't2splFBDxKNamsunmJQ0D4VNeby7FbSevuhjWeLf2RjXG'
+        'user_id' => '3433980017'
+        'screen_name' => 'gbdency'
+        'x_auth_expires' => '0'
+    ]
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=1e2965aab63a19ca38289f88300a21a431a46ca7d6d9d8923396fa5125cca527a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22S8Ms4Hhyu8QJndwyYJ9Lp0wbPHdjgt7O%22%3B%7D; advanced-frontend=kls3lpphp3ad8pjpb8fb630j85'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '51527'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=1'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477040585.575
+    'REQUEST_TIME' => 1477040585
+]
+2016-10-21 14:33:07 [::1][2][kls3lpphp3ad8pjpb8fb630j85][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Cannot use object of type stdClass as array' in E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php:65
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-10-21 14:33:07 [::1][2][kls3lpphp3ad8pjpb8fb630j85][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '__qca' => 'P0-1851834658-1464678525089'
+    '__ssid' => '99e060c7-072d-43ea-a02a-ecba5db52628'
+    '_ga' => 'GA1.1.2108609034.1464678525'
+    '_identity' => 'f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"NnYODKgWhaPCth_0EHXoM2VcTEUbueNa\",2592000]\";}'
+    '_csrf-frontend' => '1e2965aab63a19ca38289f88300a21a431a46ca7d6d9d8923396fa5125cca527a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"S8Ms4Hhyu8QJndwyYJ9Lp0wbPHdjgt7O\";}'
+    'advanced-frontend' => 'kls3lpphp3ad8pjpb8fb630j85'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'token_key' => 'koMrkwAAAAAAxZnqAAABV-WBjGo'
+    'token_secret' => 'hYJXEBtYwiSRqOjhpK1fVZwDD25Ea0lK'
+    'status' => 'verified'
+    'request_vars' => [
+        'oauth_token' => '3433980017-yp32zIy4dEq3IU0OPNzE4gw8catjNKGoBjrNbPK'
+        'oauth_token_secret' => 't2splFBDxKNamsunmJQ0D4VNeby7FbSevuhjWeLf2RjXG'
+        'user_id' => '3433980017'
+        'screen_name' => 'gbdency'
+        'x_auth_expires' => '0'
+    ]
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '__qca=P0-1851834658-1464678525089; __ssid=99e060c7-072d-43ea-a02a-ecba5db52628; _ga=GA1.1.2108609034.1464678525; _identity=f48ba93973b59bc0dd6ab7a5ba9b163872374244bc04e0d590a76baa44c18effa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NnYODKgWhaPCth_0EHXoM2VcTEUbueNa%22%2C2592000%5D%22%3B%7D; _csrf-frontend=1e2965aab63a19ca38289f88300a21a431a46ca7d6d9d8923396fa5125cca527a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22S8Ms4Hhyu8QJndwyYJ9Lp0wbPHdjgt7O%22%3B%7D; advanced-frontend=kls3lpphp3ad8pjpb8fb630j85'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '51528'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=1'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477040587.309
+    'REQUEST_TIME' => 1477040587
+]
+2016-10-21 14:38:43 [::1][-][mo9egu10vkavevil6igmpuc2s6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php:125
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\frontend\views\insight\view.php(125): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'E:\\xampp\\htdocs...', 125, Array)
+#1 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(325): require('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\xampp\\htdocs...', Array)
+#3 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\xampp\\htdocs...', Array, Object(frontend\controllers\InsightController))
+#4 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('view', Array, Object(frontend\controllers\InsightController))
+#5 E:\xampp\htdocs\BookInsights\frontend\controllers\InsightController.php(93): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\InsightController->actionView('2')
+#7 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#10 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('insight/view', Array)
+#11 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-10-21 14:38:43 [::1][-][mo9egu10vkavevil6igmpuc2s6][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'mo9egu10vkavevil6igmpuc2s6'
+    '_csrf-frontend' => 'db565b7e712471005c59e745a718dfa1e2b84f54e5efb1d476400374c3b4d6e6a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VJm6M3MxCLzHXoxaro6qAFHlJsiShdcP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=mo9egu10vkavevil6igmpuc2s6; _csrf-frontend=db565b7e712471005c59e745a718dfa1e2b84f54e5efb1d476400374c3b4d6e6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VJm6M3MxCLzHXoxaro6qAFHlJsiShdcP%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '51642'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/view?id=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/view?id=2'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477040923.432
+    'REQUEST_TIME' => 1477040923
+]
+2016-10-21 17:52:02 [::1][-][mo9egu10vkavevil6igmpuc2s6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "insight/site/login".' in E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('insight/site/lo...', Array)
+#1 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\xampp\htdocs\BookInsights\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\xampp\htdocs\BookInsights\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-10-21 17:52:02 [::1][-][mo9egu10vkavevil6igmpuc2s6][info][application] $_COOKIE = [
+    'advanced-frontend' => 'mo9egu10vkavevil6igmpuc2s6'
+    '_csrf-frontend' => 'db565b7e712471005c59e745a718dfa1e2b84f54e5efb1d476400374c3b4d6e6a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VJm6M3MxCLzHXoxaro6qAFHlJsiShdcP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/BookInsights/frontend/web/insight/view?id=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=mo9egu10vkavevil6igmpuc2s6; _csrf-frontend=db565b7e712471005c59e745a718dfa1e2b84f54e5efb1d476400374c3b4d6e6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VJm6M3MxCLzHXoxaro6qAFHlJsiShdcP%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;E:\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:/Users/admin/AppData/Roaming/Composer/vendor/bin/'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/xampp/htdocs/BookInsights/frontend/web/index.php'
+    'REMOTE_PORT' => '49363'
+    'REDIRECT_URL' => 'http://localhost/BookInsights/frontend/web/insight/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/BookInsights/frontend/web/insight/site/login'
+    'SCRIPT_NAME' => '/BookInsights/frontend/web/index.php'
+    'PHP_SELF' => '/BookInsights/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477052522.436
+    'REQUEST_TIME' => 1477052522
+]

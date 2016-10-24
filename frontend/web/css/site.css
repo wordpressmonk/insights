@@ -1,0 +1,237 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: "\e151";
+}
+
+a.desc:after {
+    content: "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view td {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav > li > form {
+    padding: 8px;
+}
+
+@media(max-width:768px) {
+	.nav li > form {
+	    padding: 3px;
+	}
+}
+
+.nav > li > form > button:hover {
+    text-decoration: none;
+}
+.navbar {
+    background-color: white;
+    border-top: 2px solid #b92b27;
+    border-bottom: 1px solid #ddd;
+	}
+.navbar-brand{
+	color: #b92b27 !important;
+    font-weight: 700;
+}
+.navbar-inverse .navbar-nav > li > a {
+	color: #b92b27 !important;
+    font-weight: 700;
+}
+.navbar-inverse .btn-link {
+	color: #b92b27 !important;
+    font-weight: 700;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #ececec;
+}
+.insight-item:hover {
+    background-color: #f6f8f9;
+    cursor: pointer;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
+.insight-item  .heading{
+    font-size: 19px;
+    color: #333;
+    letter-spacing: -0.5px;
+    line-height: 1.25;
+    font-weight: bold;	
+}
+.insight-item  .bio{
+	line-height: 3.2em;
+}
+.bio {
+	margin-left: -25px;
+}
+#comments .cardblock-header {
+    padding: 0;
+    border-bottom: 0;
+}
+h4.comment-input {
+    display: inline-block;
+    width: 100%;
+    background: #f1f1f1;
+    padding: 10px;
+}
+h4.comment-input input {
+    height: 36px;
+    background: #fff;
+    box-shadow: none;
+    border-top-left-radius: 5px;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.btn:hover, .btn:focus, .btn.focus {
+    color: #333;
+    text-decoration: none;
+}
+h4.comment-input button, h4.share-input button ,h4.comment-input a{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.action-qard button.qard, button.qard ,a.qard{
+    background: #465360;
+}
+button.qard, .action-qard .btn-grey ,a.qard{
+    border-radius: 2px;
+    border: 0;
+    color: #fff;
+    padding: 8px 12px;
+}
+ul.comment-list {
+    padding: 0 20px;
+}
+.comment-img {
+    overflow: hidden;
+    text-align: center;
+    padding: 5px;
+}
+.comment-img img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+ul.comment-list li {
+    min-height: 50px;
+    margin-bottom: 20px;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+section.consume-card li {
+    margin-top: 10px !Important;
+}
+.comment-txt p {
+    margin-bottom: 5px;
+}
+p.post-date {
+    color: #afa8a8;
+    font-style: normal;
+}
+input#reply-input {
+    width: 60%;
+    margin-left: 15%;
+}
+.reply-input{
+	width: 60%;
+    margin-right: 5px;
+}
+.reply_div{
+	margin-left:15%;
+	display:none
+}
+.not-moderated{
+	background-color: lavenderblush
+}
+    
