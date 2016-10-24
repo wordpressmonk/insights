@@ -10,8 +10,11 @@ return [
 		'social' => [
 			'class' => 'common\modules\social\Social',
 		],
+		/** Uncomment this to use insights as a module **/
+		/**
         'insights' => [
             'class' => 'common\modules\insights\Insight',
         ],
+		**/
 	]  
 ];
