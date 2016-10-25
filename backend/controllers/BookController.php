@@ -8,7 +8,8 @@ use common\models\search\BookSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use yii\web\UploadedFile;
+use yii\helpers\Json;
 /**
  * BookController implements the CRUD actions for Book model.
  */
@@ -105,7 +106,42 @@ class BookController extends Controller
 
         return $this->redirect(['index']);
     }
-
+	
+	/**
+	 * Upload the image for book
+	 * If u pload successful, returnsjson object
+	 * @param post
+	 * return json
+	 */
+	public function actionSetCoverImage(){
+		$imageFile = UploadedFile::getInstanceByName('Book[cover_image]');		
+		$directory = \Yii::getAlias('@app/web/img/books') . DIRECTORY_SEPARATOR . Yii::$app->session->id . DIRECTORY_SEPARATOR;
+		if (!is_dir($directory)) {
+			mkdir($directory);
+		}
+		if ($imageFile) {
+			$uid = uniqid(time(), true);
+			$fileName = $uid . '.' . $imageFile->extension;
+			$filePath = $directory . $fileName;
+			if ($imageFile->saveAs($filePath)) {
+				$path = Yii::$app->homeUrl.'/img/books/' . Yii::$app->session->id . DIRECTORY_SEPARATOR . $fileName;
+				$thmbnail = stripslashes($path);
+				return Json::encode([
+					'files' => [
+						'name' => $fileName,
+						'size' => $imageFile->size,
+						"url" => $path,
+						"thumbnailUrl" => $thmbnail,
+						"deleteUrl" => 'image-delete?name=' . $fileName,
+						"deleteType" => "POST"
+					]
+				]);
+				
+				
+			}
+		}
+		return '';		
+	}
     /**
      * Finds the Book model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
