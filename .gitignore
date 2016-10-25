@@ -31,3 +31,10 @@ phpunit.phar
 
 # vagrant runtime
 /.vagrant
+
+# config dir
+common/config
+
+#runtime dir
+frontend/runtime
+backend/runtime

@@ -10,30 +10,39 @@ use yii\grid\GridView;
 $this->title = 'Books';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="book-index">
+<h1><?= Html::encode($this->title) ?></h1>
+<div class="card">
+	<div class="card-body">		
+		<?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+		<p>
+			<?= Html::a('Create Book', ['create'], ['class' => 'btn btn-success']) ?>
+		</p>
+		<?= GridView::widget([
+			'dataProvider' => $dataProvider,
+			'filterModel' => $searchModel,
+			'columns' => [
+				['class' => 'yii\grid\SerialColumn'],
 
-    <p>
-        <?= Html::a('Create Book', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
-    <?= GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+			//	'book_id',
+				'title',
+			[
+				'attribute' => 'image',
+				'format' => 'raw',    
+				'value' => function ($data) {
+					return Html::img($data['image'],
+                ['width' => '70px']);
+			},
+			],
+				'author',
+			//	'user_id',
+				'url:url',
+				'isbn',
+				//'image',
+				// 'description:ntext',
 
-            'book_id',
-            'title',
-            'author',
-            'user_id',
-            'url:url',
-            // 'isbn',
-            // 'image',
-            // 'description:ntext',
-
-            ['class' => 'yii\grid\ActionColumn'],
-        ],
-    ]); ?>
+				['class' => 'yii\grid\ActionColumn'],
+			],
+		]); ?>
+		</div>
 </div>

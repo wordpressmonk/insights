@@ -4,6 +4,8 @@ namespace backend\controllers;
 
 use Yii;
 use common\models\Book;
+use common\models\Tag;
+use common\models\BookTag;
 use common\models\search\BookSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -66,8 +68,25 @@ class BookController extends Controller
     {
         $model = new Book();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->book_id]);
+        if ($model->load(Yii::$app->request->post())) {
+			$model->user_id = \Yii::$app->user->id;
+			if($model->save()){
+				foreach($model->tags as $tag){
+					if(!is_numeric($tag)){
+						//save new tag here
+						$custom_tag = new Tag();
+						$custom_tag->tag_name = $tag;
+						if($custom_tag->save(false))
+							$tag = $custom_tag->tag_id;
+					}
+					//find tag and save the booktag map
+					$book_tag = new BookTag();
+					$book_tag->book_id = $model->book_id;
+					$book_tag->tag_id = $tag;
+					$book_tag->save(false);
+				}
+			}
+				return $this->redirect(['view', 'id' => $model->book_id]);
         } else {
             return $this->render('create', [
                 'model' => $model,

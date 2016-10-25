@@ -57,7 +57,7 @@ use dosamigos\fileupload\FileUpload;
 			?>
 
 			<img id="upload_preview" src="<?=Yii::$app->homeUrl?>img/site/book_icon.png" width="100px" height="100px">
-			
+			<?= $form->field($model, 'image')->hiddenInput() ?>
 
 		<?= $form->field($model, 'description')->textarea(['rows' => 6]) ?>
 		
